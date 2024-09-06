@@ -12,7 +12,20 @@ public class VisaoImp implements Visao {
             case XBURGUER:
                 result = new Xburguer().passarPreco();
                 break;
-            default:
+            case XSALADA:
+                result = new Xsalada().passarPreco();
+                break;
+            case XBACON:
+                result = new Xbacon().passarPreco();
+                break;
+            case XBACONSALADA:
+                result = new XBaconSalada().passarPreco();
+                break;
+            case XCALABRESA:
+                result = new XCalabresa().passarPreco();
+                break;
+            case XEGG:
+                result = new XEgg().passarPreco();
                 break;
         }
         return result;
